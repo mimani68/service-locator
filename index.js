@@ -14,10 +14,10 @@ WeatherService.prototype.showLatest = async function () {
 };
 
 // Register service
-locator.register('com/app/serv/weather', WeatherService, ['Asia/Shanghai']);
+locator.register('com.app.serv.weather', WeatherService, ['Asia/Shanghai']);
 
 // Resolve/User service
-locator.resolve('com/app/serv/weather').showLatest()
+locator.resolve('com.app.serv.weather').showLatest()
     .then(el => {
         console.log(el)
     })
